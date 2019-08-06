@@ -1,9 +1,9 @@
 
 export const data = [
-  {Name: 'Str', LongName: 'Strength', Order: 0, Mental: false},
-  {Name: 'Dex', LongName: 'Dexterity', Order: 1, Mental: false},
-  {Name: 'Con', LongName: 'Constitution', Order: 2, Mental: false},
-  {Name: 'Int', LongName: 'Intelligence', Order: 3, Mental: true},
-  {Name: 'Wis', LongName: 'Wisdom', Order: 4, Mental: true},
-  {Name: 'Cha', LongName: 'Charisma', Order: 5, Mental: true},
+  {Name: 'Str', LongName: 'Strength', Order: 0, Mental: false, Description: `Strength measures your character’s physical power. Strength is important if your character plans to engage in hand-to-hand combat. Your Strength modifier gets added to melee damage rolls and determines how much your character can carry.  `},
+  {Name: 'Dex', LongName: 'Dexterity', Order: 1, Mental: false, Description: `Dexterity measures your character’s agility, balance, and reflexes. Dexterity is important if your character plans to make attacks with ranged weapons or use stealth to surprise foes. Your Dexterity modifier is also added to your character’s AC and Reflex saving throws.`},
+  {Name: 'Con', LongName: 'Constitution', Order: 2, Mental: false, Description: `Constitution measures your character’s overall health and stamina. Constitution is an important statistic for all characters, especially those who fight in close combat. Your Constitution modifier is added to your Hit Points and Fortitude saving throws.`},
+  {Name: 'Int', LongName: 'Intelligence', Order: 3, Mental: true, Description: `Intelligence measures how well your character can learn and reason. A high Intelligence allows your character to analyze situations and understand patterns, and it means they can become trained in additional skills and might be able to master additional languages.`},
+  {Name: 'Wis', LongName: 'Wisdom', Order: 4, Mental: true, Description: `Wisdom measures your character’s common sense, awareness, and intuition. Your Wisdom modifier is added to your Perception and Will saving throws.`},
+  {Name: 'Cha', LongName: 'Charisma', Order: 5, Mental: true, Description: `Charisma measures your character’s personal magnetism and strength of personality. A high Charisma score helps you influence the thoughts and moods of others.`},
 ];
