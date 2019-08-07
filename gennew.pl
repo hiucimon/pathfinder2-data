@@ -1,9 +1,7 @@
 #!/usr/bin/env perl
 my (@args)=@ARGV;
-print "Here -->@args<--\n";
 for (@args) {
     if (!-d "src/modules/$_") {
-        print "There\n";
         mkdir "src/modules/$_";
         cont($_);
         service($_);
@@ -63,7 +61,7 @@ import { ${cam}Service } from './$name.service';
 export class ${cam}Module {}
 EOF
     close OUT;
-    print "Add import { ${cam}Module } from './modules/$name/$name.module'; to your app.module.ts";
+    print "Add --->import { ${cam}Module } from './modules/$name/$name.module';<--- to your app.module.ts\n";
 
 }
 
