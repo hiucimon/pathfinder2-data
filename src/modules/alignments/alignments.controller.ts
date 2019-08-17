@@ -3,10 +3,10 @@ import { AlignmentsService } from './alignments.service';
 
 @Controller('alignments')
 export class AlignmentsController {
-  constructor(private readonly attrService: AlignmentsService) {}
+  constructor(private readonly theService: AlignmentsService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }

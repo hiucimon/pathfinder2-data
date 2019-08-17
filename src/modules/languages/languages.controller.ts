@@ -3,10 +3,11 @@ import { LanguagesService } from './languages.service';
 
 @Controller('languages')
 export class LanguagesController {
-  constructor(private readonly attrService: LanguagesService) {}
+  constructor(private readonly theService: LanguagesService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }
+

@@ -3,10 +3,10 @@ import { AttrService } from './attr.service';
 
 @Controller('attr')
 export class AttrController {
-  constructor(private readonly attrService: AttrService) {}
+  constructor(private readonly theService: AttrService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }

@@ -3,10 +3,10 @@ import { BasescoresService } from './basescores.service';
 
 @Controller('basescores')
 export class BasescoresController {
-  constructor(private readonly attrService: BasescoresService) {}
+  constructor(private readonly theService: BasescoresService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }

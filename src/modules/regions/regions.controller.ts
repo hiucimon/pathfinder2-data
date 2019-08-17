@@ -3,10 +3,10 @@ import { RegionsService } from './regions.service';
 
 @Controller('regions')
 export class RegionsController {
-  constructor(private readonly attrService: RegionsService) {}
+  constructor(private readonly theService: RegionsService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }

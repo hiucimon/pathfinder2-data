@@ -3,10 +3,10 @@ import { AbilitymodsService } from './abilitymods.service';
 
 @Controller('abilitymods')
 export class AbiltymodsController {
-  constructor(private readonly attrService: AbilitymodsService) {}
+  constructor(private readonly theService: AbilitymodsService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }

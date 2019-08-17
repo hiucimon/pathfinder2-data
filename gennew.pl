@@ -22,7 +22,7 @@ import { Injectable } from '\@nestjs/common';
 import { data } from './$name.data';
 \@Injectable()
 export class ${cam}Service {
-  getAttr(): any {
+  getHandler(): any {
     return data;
   }
 }
@@ -76,11 +76,11 @@ import { ${cam}Service } from './$name.service';
 
 \@Controller('$name')
 export class ${cam}Controller {
-  constructor(private readonly attrService: ${cam}Service) {}
+  constructor(private readonly theService: ${cam}Service) {}
 
   \@Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }
 EOF

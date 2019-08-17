@@ -3,10 +3,10 @@ import { BackgroundsService } from './backgrounds.service';
 
 @Controller('backgrounds')
 export class BackgroundsController {
-  constructor(private readonly attrService: BackgroundsService) {}
+  constructor(private readonly theService: BackgroundsService) {}
 
   @Get()
-  getHello(): string[] {
-    return this.attrService.getAttr();
+  getRequestHandler(): string[] {
+    return this.theService.getHandler();
   }
 }
